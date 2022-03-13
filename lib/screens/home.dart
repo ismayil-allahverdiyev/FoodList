@@ -9,13 +9,13 @@ import 'package:untitled2/datas/details.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled2/providers/last_viewed.dart';
 import 'package:untitled2/screens/add_recipe_page.dart';
-import 'package:untitled2/widgets/card.dart';
 import 'package:flutter/services.dart';
 import 'package:untitled2/loading/loading_for_search.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:untitled2/screens/profile.dart';
 import 'package:untitled2/screens/receipe.dart';
 import 'package:untitled2/services/authentication_service.dart';
+import '../widgets/card.dart';
 import 'selective.dart';
 import '../providers/favourites_list.dart';
 
