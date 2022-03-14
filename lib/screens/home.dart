@@ -222,8 +222,8 @@ class _HomeState extends State<Home> {
                             decoration: const BoxDecoration(
                                 color: Color.fromRGBO(119, 118, 188, 1),
                                 borderRadius: BorderRadius.only(
-                                    bottomRight: Radius.circular(30),
-                                    bottomLeft: Radius.circular(30)
+                                    bottomRight: Radius.circular(15),
+                                    bottomLeft: Radius.circular(15)
                                 )
                             ),
                             child: Column(
@@ -596,7 +596,7 @@ class _HomeState extends State<Home> {
                                   children: [
                                     SizedBox(
                                         width: width,
-                                        height: height*0.36,
+                                        height: width*0.55,
                                         child: ListView.builder(
                                             itemCount: widget.allreceipes.length,
                                             scrollDirection: Axis.horizontal,
@@ -633,7 +633,7 @@ class _HomeState extends State<Home> {
                                     children: [
                                       SizedBox(
                                           width: width,
-                                          height: favouriteList.getFavList().isEmpty ? height*0.1 : height * 0.36,
+                                          height: favouriteList.getFavList().isEmpty ? height*0.1 : width * 0.55,
                                           child: favouriteList.getFavList().isEmpty ? Center(child: Text("Add recipes please", style: GoogleFonts.pacifico(color: Colors.black, height: height*0.0013, fontSize: height*0.045,),),) : ListView.builder(
                                               itemCount: favouriteList.getFavList().length,
                                               scrollDirection: Axis.horizontal,
